@@ -1,0 +1,5 @@
+numpy>=1.19.5
+scikit-learn>=1.6.1
+pandas
+streamlit
+mysql-connector-python
