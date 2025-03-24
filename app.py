@@ -29,7 +29,7 @@ def create_connection():
 connection = create_connection()
 
 # Load the model safely
-model_path = os.path.abspath(r"C:\Users\A2Z\Desktop\Cloud\build.pkl")
+model_path = os.path.abspath(r"C:\Users\DELL\Downloads\Cloud\build.pkl")
 
 if not os.path.exists(model_path):
     st.error(f"Model file not found at: {model_path}")
