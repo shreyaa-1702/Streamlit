@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Loan Prediction</title>
+    <link rel="stylesheet" href="/staticfiles/style.css">
+</head>
+<body>
+    
+    <form action="{{url_for('predict')}}" method="post">
+
+        <input type="text" placeholder="Customer Age" name="Age">
+        <input type="text" placeholder="Family Member" name="Dependendents">
+        <input type="text" placeholder="Income" name="ApplicantIncome">
+        <input type="text" placeholder="Loan Amount" name="LoanAmount">
+        <input type="text" placeholder="Cibil Score" name="Cibil_Score">
+        <input type="text" placeholder="Tenure" name="Tenure">
+        
+        <h3>Gender</h3>
+        <select name="Gender" id="g">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <h3>Married</h3>
+        <select name="Married" id="g">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <h3>Education</h3>
+        <select name="Education" id="g">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <h3>Self Employed</h3>
+        <select name="Self_Employed" id="g">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <h3>Previous Loan Taken</h3>
+        <select name="Previous Loan Taken" id="g">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <h3>Property Area</h3>
+        <select name="Property Area" id="abc">
+            <option value="0">Rural</option>
+            <option value="1">Semiurban</option>
+            <option value="2">Urban</option>
+        </select>
+
+        <h3>Customer Bandwidth</h3>
+        <select name="Customer_Bandwidth" id="abc">
+            <option value="0">Bad</option>
+            <option value="1">Good</option>
+            <option value="2">Medium</option>
+        </select>
+        <br>
+        <br>
+        <button type="Submit">Prediction</button>
+    </form>
+
+    <br><br>
+    {{prediction_text}}
+</body>
+</html>

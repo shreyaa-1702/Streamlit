@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(183, 240, 244);
+    text-align: center;
+}
+
+#g{
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#g:hover{
+    background-color: aquamarine;
+}
+#abc{
+    width: 125px;
+    height: 35px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#abc:hover{
+    background-color: aquamarine;
+}
